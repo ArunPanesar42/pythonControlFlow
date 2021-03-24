@@ -49,32 +49,69 @@
 
 # For is python keyword variable then data collection
 
-shopping_list = ["bread", "eggs", "milk", "orange"]
+# shopping_list = ["bread", "eggs", "milk", "orange"]
+#
+# # Lets for loop to iterate through our shopping list
+# for items in shopping_list:
+#     print(items)
+#
+# # Lets iterate through letters in our word
+# for letter in "fruits":
+#     print(letter)
+#
+# # Lets go through the loop until we find an item
+# for items in shopping_list:
+#     print(items)
+#     if items == "milk":
+#         break   # At this point when we find milk the program will "break" meaning the loop ends
+#
+# food_bill = {1: {"name": "James", "bill": "£1"}, 2: {"name": "Bond", "bill": "£2"}
+#     , 3: {"name": "shah", "bill": "£3"}}
+#
+# # print(food_bill)
+# # Let's iterate through our dict
+# for items in food_bill.values():
+#     print(items)
+#
+# #print the names with the bill amount for each person
+#
+# for value in food_bill.values():
+#     print(f"Name: {value['name']}\nBill: {value['bill']}\n")
+# # ANother way on doing it
+# for item in food_bill.values():
+#     # Nested loop to iterate through the dictionary to get the value
+#     for Name_bill in item.values():
+#         print(Name_bill)
 
-# Lets for loop to iterate through our shopping list
-for items in shopping_list:
-    print(items)
 
-# Lets iterate through letters in our word
-for letter in "fruits":
-    print(letter)
+# # While loop
+# # Syntax: while - condition - value:
+# num = 0
+# while num < 10:
+#     print(f"it's working -> {num}")
+#     num +1
 
-# Lets go through the loop until we find an item
-for items in shopping_list:
-    print(items)
-    if items == "milk":
-        break   # At this point when we find milk the program will "break" meaning the loop ends
+# Second Iteration
+# num = 0
+# while num < 10:
+#     print(f"it's working -> {num}")
+#     if num == 4: # if it is true the loop ends
+#         break
+#     num += 1
 
-food_bill = {1: {"name": "James", "bill": "£1"}, 2: {"name": " Bond", "bill": "£2"}
-    , 3: {"name": "shah", "bill": "£3"}}
+## Third iteration
+# age = input("Please enter your age? ")
+# print(f"your age is {age} ")
 
-# print(food_bill)
-# Let's iterate through our dict
-for items in food_bill.values():
-    print(items)
-
-#print the names with the bill amount for each person
-#James and the amount for James
-
-for value in food_bill.values():
-    print(f"Name: {value['name']}\nBill: {value['bill']}\n")
+user_input = True
+while user_input:
+    age = input("Please enter your age?")
+    if age.isdigit(): # isdigit() ensures user input is in digits
+        user_input = False
+    else:
+        print("Please enter your age in digits")
+print(f"your age is {age} ") # This is only executed if the user enters digits for age
+# num = 0
+# while num < 10:
+#     print(f"it's working -> {num}")
+#     num +1

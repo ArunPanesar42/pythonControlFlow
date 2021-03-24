@@ -57,5 +57,7 @@ for value in food_bill.values():
 ```
 
 ### What are WHILE Loops ?
-- The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
-- We generally use this loop when we don't know the number of times to iterate beforehand.
+- What: The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+- Where: We generally use this loop when we don't know the number of times to iterate beforehand.
+- Use: We use it when we need something to be done until its true
+
